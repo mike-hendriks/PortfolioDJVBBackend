@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Image_page",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_image_pages",
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

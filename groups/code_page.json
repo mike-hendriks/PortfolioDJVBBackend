@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "code_page",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_code_pages",
+  "attributes": {
+    "Text": {
+      "type": "richtext"
+    },
+    "code": {
+      "type": "richtext"
+    },
+    "text_2": {
+      "type": "richtext"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

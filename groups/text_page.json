@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "text_page",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_text_pages",
+  "attributes": {
+    "Text": {
+      "type": "richtext"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

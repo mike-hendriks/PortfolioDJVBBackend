@@ -1,0 +1,52 @@
+{
+  "connection": "default",
+  "collectionName": "Products",
+  "info": {
+    "name": "pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "Image_group": {
+      "group": "image_page",
+      "repeatable": true,
+      "type": "group"
+    },
+    "Code_group": {
+      "group": "code_page",
+      "repeatable": true,
+      "type": "group"
+    },
+    "Text_group": {
+      "group": "text_page",
+      "repeatable": true,
+      "type": "group"
+    },
+    "page_selector": {
+      "enum": [
+        "text",
+        "image",
+        "code"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "Link": {
+      "type": "string"
+    },
+    "link_text": {
+      "type": "string"
+    }
+  }
+}
